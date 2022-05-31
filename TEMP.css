@@ -1,0 +1,92 @@
+
+        div, p, a, li, td {
+          -webkit-text-size-adjust: none;
+        }
+        div[style*="margin: 16px 0"] {
+          margin: 0 !important;
+        }
+        body {
+          margin: 0 !important;
+          padding: 0;
+          min-width: 100%;
+          background-color: #eeeeee !important;
+        }
+        table {
+          border-spacing: 0;
+          font-family: sans-serif;
+        }
+        table td {
+          border-collapse: collapse;
+          mso-table-lspace: 0pt;
+          mso-table-rspace: 0pt;
+        }
+        td {
+          padding: 0;
+        }
+        img {
+          border: 0;
+        }
+
+        .sn-outer1 {
+          margin: 0 auto;
+          width: 100%;
+          max-width: 600px;
+        }
+        .sn-disappear {
+          display: block !important;
+        }
+        .sn-appear {
+          display: none !important;
+        }
+        @media all and (max-width: 640px) {
+          .sn-container {
+            width: 100% !important;
+            float: none;
+          }
+          *[class="sn-disappear"] {
+            display: none !important;
+          }
+          img[class="sn-appear"] {
+            display: block !important;
+            width: 100% !important;
+            max-height: inherit !important;
+            overflow: visible !important;
+            float: none !important;
+          }
+          *[class=gmail] {
+            width: 100% !important;
+            display: block !important;
+            width: auto !important;
+            overflow: visible !important;
+            float: none !important;
+            height: inherit !important;
+            max-height: inherit !important;
+          }
+        }
+        @media all and (max-width: 520px) {
+          .sn-disappear {
+            display: none !important;
+          }
+          .sn-appear {
+            display: block !important;
+          }
+          *[class="cta-sn-disappear"] {
+            display: none !important;
+          }
+        }
+        /*dark mode*/ :root {
+          color-scheme: light dark;
+          supported-color-schemes: light dark;
+        }
+        @media (prefers-color-scheme: dark) {
+          td span {
+            color: #ffffff !important;
+          }
+          td a {
+            color: #ffffff !important;
+          }
+          .sn-outer1 {
+            background-color: #000000 !important;
+          }
+        }
+        /*dark mode*/
